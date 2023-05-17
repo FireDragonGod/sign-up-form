@@ -66,7 +66,7 @@ table {
 	--main-border-size-type: 2px solid;
 }
 
- @font-face {
+@font-face {
     font-family: 'moonlight';
     src: url('../font/moon_light-webfont.woff2') format('woff2'),
          url('../font/moon_bold-webfont.woff') format('woff');
@@ -81,7 +81,6 @@ table {
 	font-weight: normal;
 	font-style: normal;
 }
-
 
 body {
 	min-height: 100vh;
@@ -106,4 +105,25 @@ header {
 	color: var(--header-color-white);
 	border-right: var(--header-border-color);
 	box-shadow: var(--header-box-shadow)
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: clamp(1.5rem, 5vw, 3rem);
+	font-family: "moonlight", var(--font-family-fallback);
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--header-background-color);
+	border-bottom: var(--header-border-color-semi-white);
+	border-top: var(--header-border-color-semi-white);
+	box-shadow: var(--header-box-shadow-white);
+	height: max(5rem, 7rem);
+    position: relative;
+	top: 20%;
 }
