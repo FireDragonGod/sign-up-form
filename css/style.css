@@ -86,7 +86,7 @@ body {
 	min-height: 100vh;
 	display: flex;
 	line-height: 1.5;
-	font-family: "moonlight" var(--font-family-fallback);
+	font-family: var(--font-family-fallback);
 }
 
 img {
@@ -172,4 +172,42 @@ em {
 	font-style: italic;
 }
 
+.form-inputs {
+	padding: 0 2rem 2rem;
+	box-shadow: 0 2px 5px var(--main-black-color-transparent);
+}
 
+h2.main-form-h2 {
+    font-weight: bold;
+	font-size: large;
+	padding: 1rem 0;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 4rem;
+}
+
+.input-wrapper > div {
+	display: flex;
+	flex-direction: column;
+	color: hsl(0, 0%, 0%, 0.81);
+}
+
+
+input {
+	appearance: none;
+	border-radius: var(--main-border-radius);
+	padding: 0.2rem;
+	font-size: larger;
+	border: var(--main-border-size-type)  hsl(220, 13%, 91%);
+}
+
+input:focus {
+	outline: var(--main-border-size-type) var(--main-blue-color);
+}
+
+input:focus:invalid {
+	outline: var(--main-border-size-type) var(--main-red-color);
+}
