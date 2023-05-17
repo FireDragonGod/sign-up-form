@@ -142,3 +142,34 @@ header {
 .picture-link > p > a:hover {
 	color: var(--header-color-orange);
 }
+
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+}
+
+.notice {
+	padding: var(--main-padding);
+}
+
+.notice > p {
+    max-width: min(45ch, 75ch);
+	font-size: min(18px, 22px);
+}
+
+.notice > p:nth-child(2) {
+	line-height: 2;
+}
+
+.notice > p:last-child {
+	padding-bottom: 1rem;
+}
+
+em {
+	font-style: italic;
+}
+
+
