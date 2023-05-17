@@ -1,0 +1,109 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ *,
+ *::after,
+ *::before {
+	--font-family-fallback: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--form-button-BG-and-link-Color: hsl(182, 94%, 14%); 
+	--header-border-color: 1px solid hsla(0, 0%, 0%, 0.4);
+	--header-box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.4);
+	--header-background-color: hsla(0, 0%, 0%, 0.4);
+	--header-border-color-semi-white: 1px solid hsl(0, 0%, 100%, 0.40);
+	--header-box-shadow-white: 0 0 5px hsla(0, 100%, 100%, 0.4);
+	--header-color-white: white;
+	--header-color-orange: orange;
+	--main-padding: 1rem 2rem;
+	--main-margin: 1rem 2rem;
+	--main-border-radius: 0.5rem;
+	--main-blue-color: blue;
+	--main-red-color: red;
+	--main-white-color: white;
+	--main-black-color: black;
+	--main-black-color-transparent: hsla(0, 0%, 0%, 0.4);
+	--main-border-size-type: 2px solid;
+}
+
+ @font-face {
+    font-family: 'moonlight';
+    src: url('../font/moon_light-webfont.woff2') format('woff2'),
+         url('../font/moon_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "moonlight-bold";
+	src: url('../font/moon_bold-webfont.woff2') format('woff2'),
+		 url('../font/moon_bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	min-height: 100vh;
+	display: flex;
+	line-height: 1.5;
+	font-family: "moonlight" var(--font-family-fallback);
+}
+
+img {
+	height: clamp(4rem, 5vw, 5rem);
+	width: auto;
+}
+
+header {
+	display: flex;
+	background: no-repeat url(../img/aron-visuals-LSFuPFE9vKE-unsplash.jpg);
+	background-size: cover;
+	background-position:center;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: calc(100vw - 60%);
+	color: var(--header-color-white);
+	border-right: var(--header-border-color);
+	box-shadow: var(--header-box-shadow)
+}
