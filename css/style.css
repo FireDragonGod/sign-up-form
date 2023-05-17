@@ -127,3 +127,18 @@ header {
     position: relative;
 	top: 20%;
 }
+
+.picture-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2rem;
+}
+
+.picture-link > p > a {
+	color: var(--header-color-white);
+}
+
+.picture-link > p > a:hover {
+	color: var(--header-color-orange);
+}
