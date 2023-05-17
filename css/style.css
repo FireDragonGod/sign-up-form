@@ -211,3 +211,34 @@ input:focus {
 input:focus:invalid {
 	outline: var(--main-border-size-type) var(--main-red-color);
 }
+
+button {
+	appearance: none;
+	background-color: var(--form-button-BG-and-link-Color);
+	border: var(--main-border-size-type) var(--main-white-color);
+	border-radius: var(--main-border-radius);
+	color: var(--main-white-color);
+	font-weight: bold;
+	margin: var(--main-margin);
+	padding: var(--main-padding);
+	transition: 76ms ease;
+}
+
+button:active {
+	background-color: var(--main-white-color);
+	border: var(--main-border-size-type) var(--form-button-BG-and-link-Color);
+	color: var(--main-black-color);
+}
+
+form > .log-in-notice {
+	padding: 0 2rem;
+}
+
+form > .log-in-notice > a {
+	color: var(--form-button-BG-and-link-Color);
+}
+
+form > .log-in-notice > a:hover {
+	color: var(--header-color-orange);
+}
+
